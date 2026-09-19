@@ -13,4 +13,7 @@ print(df.loc[df["Avg Temp"].idxmax(), "City"])
 
 dfs = df["Rainfall-(in)"].mean()
 
+abv30 = df[(df["Rainfall-(in)"] > 30)]
+print(abv30)
+
 print(dfs)
